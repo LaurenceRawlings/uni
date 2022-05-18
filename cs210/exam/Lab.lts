@@ -1,0 +1,16 @@
+Entrance = (enter -> Entrance).
+Exit = (leave -> Exit).
+
+LabController(Capacity = 5) = Spaces[Capacity],
+Spaces[spacesLeft:0..Capacity] =
+(
+      when spacesLeft > 0 enter -> Spaces[spacesLeft - 1]
+    | when spacesLeft < Capacity leave -> Spaces[spacesLeft + 1]
+).
+
+||Lab = (Entrance || LabController || Exit).
+
+property TotalStudents = TotalStudents[0],
+TotalStudents[i:0..5] = (enter -> TotalStudents[i + 1] | leave -> TotalStudents[i - 1]).
+
+||TestStudentCount = (Lab || TotalStudents).

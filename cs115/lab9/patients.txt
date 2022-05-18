@@ -1,0 +1,200 @@
+Barbara
+Griffin
+Head wound
+4
+Susan
+Kelley
+Spinal injury
+5
+Anna
+Medina
+Broken leg
+3
+Carol
+Sanchez
+Cut finger
+2
+Brian
+Gilbert
+Cut finger
+2
+Carlos
+Day
+Cardiac arrest
+5
+Lisa
+George
+Common cold
+1
+Justin
+Garrett
+Third-degree burn
+4
+Lori
+Scott
+Third-degree burn
+4
+Judith
+Elliott
+Stroke
+5
+Joyce
+Cole
+Broken leg
+3
+Frances
+Allen
+first-degree burn
+2
+Bonnie
+Young
+Second-degree burn
+3
+John
+Chavez
+Graze
+2
+Timothy
+Wright
+Graze
+2
+Raymond
+Watson
+Stroke
+5
+Catherine
+Harvey
+Common cold
+1
+Keith
+Bradley
+Head wound
+4
+Alan
+Ortiz
+Second-degree burn
+3
+Bonnie
+Hansen
+Upset stomach
+1
+Jerry
+Perez
+Cut finger
+2
+Joan
+Arnold
+Cut finger
+2
+Gregory
+Ortiz
+Second-degree burn
+3
+Bruce
+Reynolds
+Upset stomach
+1
+Lawrence
+Graham
+Upset stomach
+1
+Richard
+Lawrence
+Broken arm
+3
+Brandon
+Wood
+Cut finger
+2
+Donald
+Lawrence
+Third-degree burn
+4
+Juan
+Williamson
+Second-degree burn
+3
+Jack
+Bowman
+Second-degree burn
+3
+Ernest
+Robertson
+Upset stomach
+1
+Judith
+Lawson
+Eye injury
+4
+Marie
+Franklin
+Second-degree burn
+3
+Debra
+King
+Cardiac arrest
+5
+Steve
+Watson
+Broken leg
+3
+Alice
+Mcdonald
+Sprained ankle
+1
+Janet
+Jones
+Stroke
+5
+Jeffrey
+Barnes
+Spinal injury
+5
+Terry
+Willis
+Graze
+2
+Henry
+Hawkins
+Sprained ankle
+1
+Sharon
+Ford
+Upset stomach
+1
+Peter
+Perez
+Third-degree burn
+4
+Thomas
+Perez
+Broken arm
+3
+Ryan
+Sanchez
+Cardiac arrest
+5
+Jack
+Jones
+Stroke
+5
+Antonio
+Little
+Cardiac arrest
+5
+Denise
+Peters
+Spinal injury
+5
+Matthew
+Oliver
+Sprained ankle
+1
+Jean
+Lane
+Cardiac arrest
+5
+Gerald
+Dean
+Graze
+2

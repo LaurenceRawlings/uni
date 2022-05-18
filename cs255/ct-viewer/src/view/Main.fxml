@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane style="-fx-background-color: lightgrey; -fx-border-color: black;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+    <left>
+        <VBox fx:id="box_view" alignment="CENTER" BorderPane.alignment="CENTER">
+            <Label text="View" underline="true" />
+            <Button mnemonicParsing="false" onAction="#btnX" prefWidth="50.0" text="Side">
+                <VBox.margin>
+                    <Insets bottom="5.0" />
+                </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnY" prefWidth="50.0" text="Front">
+                <VBox.margin>
+                    <Insets bottom="5.0" />
+                </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#btnZ" prefWidth="50.0" text="Top" />
+            <ToggleButton mnemonicParsing="false" onAction="#btnMip" prefWidth="50.0" text="MIP">
+                <VBox.margin>
+                    <Insets bottom="5.0" top="20.0" />
+                </VBox.margin>
+            </ToggleButton>
+            <ToggleButton mnemonicParsing="false" onAction="#btnHe" prefWidth="50.0" text="HE" />
+        </VBox>
+    </left>
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+    <center>
+        <VBox fx:id="box_image" alignment="CENTER" BorderPane.alignment="CENTER">
+            <Label fx:id="lbl_view" text="Top View">
+                <VBox.margin>
+                    <Insets top="20.0" />
+                </VBox.margin>
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+            <ImageView fx:id="img_ct" pickOnBounds="true" preserveRatio="true">
+                <VBox.margin>
+                    <Insets bottom="20.0" left="20.0" right="20.0" />
+                </VBox.margin>
+                <viewport>
+                    <Rectangle2D />
+                </viewport>
+            </ImageView>
+        </VBox>
+    </center>
+    <top>
+        <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+            <Label text="CT Viewer">
+                <font>
+                    <Font size="18.0" />
+                </font>
+                <VBox.margin>
+                    <Insets bottom="10.0" />
+                </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER">
+                <Label text="File:" />
+                <TextField fx:id="txt_file" focusTraversable="false" mouseTransparent="true" prefWidth="300.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#btnOpen" text="...">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Button>
+            </HBox>
+            <HBox alignment="CENTER">
+                <VBox.margin>
+                    <Insets top="10.0" />
+                </VBox.margin>
+                <Label text="Width:" />
+                <TextField fx:id="txt_width" prefWidth="50.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextField>
+                <Label text="Height:" />
+                <TextField fx:id="txt_height" prefWidth="50.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextField>
+                <Label text="Depth:" />
+                <TextField fx:id="txt_depth" prefWidth="50.0">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onAction="#btnView" prefWidth="50.0" text="View" />
+            </HBox>
+        </VBox>
+    </top>
+    <bottom>
+        <VBox fx:id="box_slice" alignment="BOTTOM_CENTER" BorderPane.alignment="CENTER">
+            <HBox alignment="CENTER">
+                <Label text="Slice:" />
+                <Label fx:id="lbl_value" text="0">
+                    <HBox.margin>
+                        <Insets left="5.0" />
+                    </HBox.margin>
+                </Label>
+            </HBox>
+            <HBox alignment="CENTER">
+                <Label text="0" />
+                <Slider fx:id="sldr_value" majorTickUnit="50.0" minorTickCount="10" prefWidth="200.0" showTickMarks="true">
+                    <padding>
+                        <Insets left="20.0" right="20.0" />
+                    </padding>
+                </Slider>
+                <Label fx:id="lbl_max" text="Max" />
+            </HBox>
+            <ScrollPane fx:id="scroll_thumbs" hbarPolicy="ALWAYS" prefHeight="80.0" vbarPolicy="NEVER">
+                <HBox fx:id="box_thumbs" alignment="CENTER_LEFT" />
+            </ScrollPane>
+        </VBox>
+    </bottom>
+    <right>
+        <VBox fx:id="box_scale" alignment="CENTER" BorderPane.alignment="CENTER">
+            <Label text="Scale" underline="true" />
+            <Slider fx:id="sldr_zoom" blockIncrement="0.0" majorTickUnit="0.5" max="2.0" min="0.1" minorTickCount="2" orientation="VERTICAL" snapToTicks="true" value="1.0" />
+        </VBox>
+    </right>
+
+</BorderPane>

@@ -1,0 +1,108 @@
+import java.util.NoSuchElementException;
+
+public class LinkedList<T> {
+    private Link head;
+    private Link tail;
+
+    public LinkedList() {
+        head = null;
+        tail = null;
+    }
+
+    public boolean isEmpty() {
+        if (head == null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public Link getLinkAt(int index) throws NoSuchElementException {
+        Link currentLink = head;
+        for (int i = 0; i < index; i++) {
+            currentLink = currentLink.getNext();
+
+            if (currentLink == null) {
+                throw new NoSuchElementException();
+            }
+        }
+        return currentLink;
+    }
+
+    public T elementAt(int index) throws NoSuchElementException {
+        Link currentItem = head;
+        for (int i = 0; i < index; i++) {
+            currentItem = currentItem.getNext();
+
+            if (currentItem == null) {
+                throw new NoSuchElementException();
+            }
+        }
+        return (T) currentItem.getElement();
+    }
+
+    public void insertAt(int index, T e) throws NoSuchElementException {
+        Link newItem = new Link(e, null);
+
+        if (isEmpty()) {
+            if (index == 0) {
+                head = newItem;
+                tail = newItem;
+            } else {
+                throw new NoSuchElementException();
+            }
+
+        } else if (index == 0) {
+            newItem.setNext(head);
+            head = newItem;
+        } else {
+            Link currentItem = head;
+            for (int i = 0; i < index - 1; i++) {
+                if (currentItem.getNext() == null) {
+                    throw new NoSuchElementException();
+                }
+                currentItem = currentItem.getNext();
+            }
+
+            newItem.setNext(currentItem.getNext());
+            currentItem.setNext(newItem);
+
+            if (currentItem == tail) {
+                tail = newItem;
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        Link currentItem = head;
+        String s = "";
+
+        while (currentItem.getNext() != null) {
+            s += currentItem.getElement() + ", ";
+            currentItem = currentItem.getNext();
+        }
+
+        return s += currentItem.getElement();
+    }
+
+
+    //Challenge
+    public void removeAt(int index) throws NoSuchElementException {
+        if (index == 0) {
+            head = head.getNext();
+        } else {
+            Link currentItem = head;
+            for (int i = 0; i < index - 1; i++) {
+                if (currentItem.getNext() == null) {
+                    throw new NoSuchElementException();
+                }
+
+                currentItem = currentItem.getNext();
+            }
+
+            Link remove = currentItem.getNext();
+            currentItem.setNext(remove.getNext());
+        }
+    }
+}

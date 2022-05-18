@@ -1,0 +1,21 @@
+const N = 10
+range R = 0..N
+
+Count = Count[N],
+Count[i:R] = (when i>0 one -> Count[i-1]).
+
+Pile = Pile[N],
+Pile[i:R] = (when i>1 one -> Pile[i-1] 
+    | when i>2 two -> Pile[i-2] 
+    | when i>4 four -> Pile[i-4]
+    | when i==1 win -> END
+    | when i==2 win -> END
+    | when i==4 win -> END).
+
+set Moves = {one, two, four, win}
+Turns = (a.Moves -> b.Moves -> Turns).
+||Game = ({a,b}::Pile || Turns).
+
+//Q7 - 30
+//Q8 - No
+//Q9 - 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javaFx"/>
+	<classpathentry kind="lib" path="D:/Users/Laurence/OneDrive - Swansea University/Java Workspace/Reaction Game/src/guava-23.0.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Laurence/OneDrive - Swansea University/Java Workspace/Reaction Game/src/testFx-3.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Laurence/OneDrive - Swansea University/Java Workspace/Reaction Game/src/testfx-core-4.0.15-alpha.jar"/>
+	<classpathentry kind="lib" path="D:/Users/Laurence/OneDrive - Swansea University/Java Workspace/Reaction Game/src/testfx-junit-4.0.15-alpha.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

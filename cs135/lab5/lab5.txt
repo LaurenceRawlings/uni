@@ -1,0 +1,5 @@
+Task 5.2
+
+The program should find and return the index of the first appearance of the integer passed in as a parameter. However, because there is no break in the while loop it will continue to search for the integer even after it has found it.
+
+To find this bug I added a break point on the while loop (line 6). I then used the step into button repeatedly to see how many times the while loop ran around. After it had finished I used the resume button to skip back the the start of the while loop when the index method was next called to check for the next index. I eventually found out that when it came to the program, testing 12, because 12 appeared in the array twice the position got changed to i twice in the loop which was then returned, But this is wrong because this is not the first appearance of 12 in the array. Also with trying to find other numbers the while loop in the index method ran on longer than it needed to because even after position has been set to i the loop continued to run, this is why the break statement is needed.

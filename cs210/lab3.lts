@@ -1,0 +1,22 @@
+//Task 1
+SEAT = EMPTY, 
+EMPTY = (reserve -> BOOKED | query -> EMPTY),
+BOOKED = (reserve -> ERROR | query -> BOOKED).
+
+//Task 2
+const N = 1
+||SEATS = (seat[id:0..N]:SEAT).
+
+//Task 3
+TERMINAL = (choose[id:0..N] -> Selection[id]),
+        Selection[id:0..N] = (seat[id].query[state:0..1] ->
+        (when state == 0 seat[id].reserve -> TERMINAL
+        | when state == 1 return -> TERMINAL)).
+
+//Task 4
+||HALL = ({a,b}::SEATS || {a, b}:TERMINAL).
+
+//Task 5
+//Yes, same seat trying to be booked simultaneously.
+//SEATS process needs to be syncronized or locked so 
+//that only one terminal can book a seat at a time.

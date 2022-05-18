@@ -1,0 +1,13 @@
+Biscuits Left - Barrel 1: 6
+Biscuits Left - Barrel 2: 8
+Biscuits taken by player 1: From barrel1 (one), barrel2 (two), or both (both)? Biscuits Left - Barrel 1: 3
+Biscuits Left - Barrel 2: 5
+Biscuits taken by player 2: From barrel1 (one), barrel2 (two), or both (both)? Biscuits Left - Barrel 1: 1
+Biscuits Left - Barrel 2: 3
+Biscuits taken by player 1: From barrel1 (one), barrel2 (two), or both (both)? Biscuits Left - Barrel 1: 1
+Biscuits Left - Barrel 2: 2
+Biscuits taken by player 2: From barrel1 (one), barrel2 (two), or both (both)? Biscuits Left - Barrel 1: 0
+Biscuits Left - Barrel 2: 2
+Biscuits taken by player 1: From barrel1 (one), barrel2 (two), or both (both)? Biscuits Left - Barrel 1: 0
+Biscuits Left - Barrel 2: 0
+Winner is player 1
